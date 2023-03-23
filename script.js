@@ -38,6 +38,6 @@ const generateJoke = (subject, object, punchline) => {
     }
 }
 
-// Generate a joke and print it out
+// Generate a joke and print it
 const joke = generateJoke(randomSubject(), randomObject(), randomPunchline());
 joke.print();
