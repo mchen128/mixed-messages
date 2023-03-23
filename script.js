@@ -26,6 +26,7 @@ const randomPunchline = () => {
     return punchlineList[Math.floor(Math.random() * punchlineList.length)];
 }
 
+// Factory function that returns an object with the joke components and a method to print the joke
 const generateJoke = (subject, object, punchline) => {
     return {
         subject,
@@ -37,5 +38,6 @@ const generateJoke = (subject, object, punchline) => {
     }
 }
 
+// Generate a joke and print it out
 const joke = generateJoke(randomSubject(), randomObject(), randomPunchline());
 joke.print();
