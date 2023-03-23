@@ -1,10 +1,10 @@
 Mixed Messages planning
 =======================
 
-Type of message: 
+Type of message: fun facts
 
 Random variables:
--
--
--
+- topic/subject
+- source (wikipedia, bard, twitter)
+- index in list
 
