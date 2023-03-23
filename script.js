@@ -25,3 +25,14 @@ const randomPunchline = () => {
     ]
 }
 
+const generateJoke = (subject, object, punchline) => {
+    return {
+        subject,
+        object,
+        punchline,
+        print() {
+            console.log(`What did the ${this.subject} say to the ${this.object}? \n"${this.punchline}"`);
+        }
+    }
+}
+
