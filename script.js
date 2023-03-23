@@ -23,6 +23,7 @@ const randomPunchline = () => {
         "Help me!!!",
         "Give me another minute."
     ]
+    return punchlineList[Math.floor(Math.random() * punchlineList.length)];
 }
 
 const generateJoke = (subject, object, punchline) => {
@@ -31,8 +32,10 @@ const generateJoke = (subject, object, punchline) => {
         object,
         punchline,
         print() {
-            console.log(`What did the ${this.subject} say to the ${this.object}? \n"${this.punchline}"`);
+            console.log(`What did the ${this.subject} say to ${this.object}? \n"${this.punchline}"`);
         }
     }
 }
 
+const joke = generateJoke(randomSubject(), randomObject(), randomPunchline());
+joke.print();
